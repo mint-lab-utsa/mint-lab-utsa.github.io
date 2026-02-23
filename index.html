@@ -6,50 +6,46 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  padding: 0;
+  background-color: #f4f6f9;
   color: #222;
-  background-color: #f5f7fa;
 }
 
-/* HEADER */
+/* HERO */
 header {
   background: linear-gradient(135deg, #00274C, #005F9E);
   color: white;
-  padding: 120px 20px 100px 20px;
   text-align: center;
+  padding: 140px 20px 120px 20px;
 }
 
 header img {
-  width: 160px;
+  width: 150px;
   margin-bottom: 30px;
 }
 
-h1 {
-  font-size: 44px;
+header h1 {
+  font-size: 48px;
   margin-bottom: 20px;
-  font-weight: 700;
 }
 
 header p {
   font-size: 18px;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 750px;
+  margin: auto;
   opacity: 0.9;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav {
   background: white;
   padding: 18px;
   text-align: center;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -58,9 +54,8 @@ nav {
 nav a {
   margin: 0 25px;
   text-decoration: none;
-  color: #00274C;
   font-weight: 600;
-  font-size: 15px;
+  color: #00274C;
   transition: 0.3s;
 }
 
@@ -70,34 +65,76 @@ nav a:hover {
 
 /* SECTIONS */
 section {
-  max-width: 1000px;
-  margin: 100px auto;
+  max-width: 1100px;
+  margin: 120px auto;
   padding: 0 25px;
   text-align: center;
 }
 
-h2 {
-  font-size: 34px;
-  margin-bottom: 25px;
-  font-weight: 600;
+section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
   color: #00274C;
 }
 
-section p {
-  font-size: 16px;
-  line-height: 1.7;
+/* RESEARCH CARDS */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 35px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #005F9E;
+}
+
+/* TEAM CARDS */
+.team-card {
+  background: white;
+  padding: 30px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.team-card h4 {
+  margin: 15px 0 5px 0;
+}
+
+/* PUBLICATIONS */
+.pub-list {
+  text-align: left;
   max-width: 800px;
-  margin: 0 auto;
-  color: #444;
+  margin: auto;
+}
+
+.pub-list li {
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 /* FOOTER */
 footer {
   background: #00274C;
   color: white;
-  padding: 40px;
   text-align: center;
-  margin-top: 120px;
+  padding: 50px;
+  margin-top: 140px;
 }
 </style>
 </head>
@@ -128,29 +165,64 @@ footer {
 
 <section id="research">
   <h2>Research Areas</h2>
-  <p>
-    • Advanced Polymer Composites  
-    • Additive Manufacturing & Process Optimization  
-    • Rheology & Melt Flow Behavior  
-    • Machine Learning for Materials Design  
-  </p>
+
+  <div class="card-container">
+
+    <div class="card">
+      <h3>Polymer Composites</h3>
+      <p>Design and characterization of high-performance composite systems.</p>
+    </div>
+
+    <div class="card">
+      <h3>Additive Manufacturing</h3>
+      <p>Process optimization and hybrid manufacturing strategies.</p>
+    </div>
+
+    <div class="card">
+      <h3>Rheology & Flow</h3>
+      <p>Understanding melt behavior and solids loading transitions.</p>
+    </div>
+
+    <div class="card">
+      <h3>AI for Materials</h3>
+      <p>Machine learning-driven materials design and optimization.</p>
+    </div>
+
+  </div>
 </section>
 
 <section id="team">
   <h2>Team</h2>
-  <p>
-    Principal Investigator: Dr. [Name]<br>
-    PhD Students: [Names]<br>
-    Collaborators: [Names]
-  </p>
+
+  <div class="card-container">
+
+    <div class="team-card">
+      <h4>Dr. [PI Name]</h4>
+      <p>Principal Investigator</p>
+    </div>
+
+    <div class="team-card">
+      <h4>[PhD Student]</h4>
+      <p>Doctoral Researcher</p>
+    </div>
+
+    <div class="team-card">
+      <h4>[Researcher]</h4>
+      <p>Graduate Research Assistant</p>
+    </div>
+
+  </div>
 </section>
 
 <section id="publications">
-  <h2>Publications</h2>
-  <p>
-    Selected publications coming soon.  
-    (We will format this professionally next.)
-  </p>
+  <h2>Selected Publications</h2>
+
+  <ul class="pub-list">
+    <li><strong>Author, A., Author, B.</strong> (2025). Title of Paper. <em>Journal Name</em>.</li>
+    <li><strong>Author, A., Author, B.</strong> (2024). Title of Paper. <em>Journal Name</em>.</li>
+    <li><strong>Author, A., Author, B.</strong> (2023). Title of Paper. <em>Journal Name</em>.</li>
+  </ul>
+
 </section>
 
 <section id="contact">

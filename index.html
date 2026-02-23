@@ -1,107 +1,169 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>MINT Lab | UTSA</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <title>Your Lab Name</title>
+
 <style>
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #222;
-    background-color: #f9f9f9;
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background-color: #f5f7fa;
+}
+
+/* HEADER */
 header {
-    background: linear-gradient(135deg, #00274C, #005F9E);
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
+  background: linear-gradient(135deg, #00274C, #005F9E);
+  color: white;
+  padding: 120px 20px 100px 20px;
+  text-align: center;
+}
+
+header img {
+  width: 160px;
+  margin-bottom: 30px;
 }
 
 h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
+  font-size: 44px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
-h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    font-weight: 600;
+header p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
 }
 
+/* NAVIGATION */
 nav {
-    background: white;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background: white;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav a {
-    margin: 0 20px;
-    text-decoration: none;
-    color: #00274C;
-    font-weight: 600;
+  margin: 0 25px;
+  text-decoration: none;
+  color: #00274C;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s;
 }
 
+nav a:hover {
+  color: #005F9E;
+}
+
+/* SECTIONS */
 section {
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 0 20px;
-    text-align: center;
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 0 25px;
+  text-align: center;
 }
 
+h2 {
+  font-size: 34px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #00274C;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #444;
+}
+
+/* FOOTER */
 footer {
-    background: #00274C;
-    color: white;
-    padding: 30px;
-    text-align: center;
+  background: #00274C;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  margin-top: 120px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-    <img src="mint-logo.png" alt="Lab Logo" style="width:120px; margin-bottom:20px;">
-    <h1>Materials Innovation for Next-Gen Technology (MINT) Lab</h1>
-    <p>Advancing advanced manufacturing, polymer composites, and data-driven materials engineering at UTSA.</p>
+  <img src="Lab Logo.png" alt="MINT Lab Logo">
+  <h1>Materials Innovation for Next-Gen Technology (MINT) Lab</h1>
+  <p>Advancing advanced manufacturing, polymer composites, and data-driven materials engineering at the University of Texas at San Antonio.</p>
 </header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#team">Team</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#team">Team</a>
+  <a href="#publications">Publications</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
-    <h2>About the Lab</h2>
-    <p>The MINT Lab at the University of Texas at San Antonio focuses on advanced polymer composites, additive manufacturing, rheology, and data-driven materials optimization. Our research integrates experimental characterization, computational modeling, and machine learning to design high-performance engineering materials..</p>
+  <h2>About the Lab</h2>
+  <p>
+    The MINT Lab at UTSA focuses on advanced polymer composites, additive manufacturing, rheology, and data-driven materials optimization.
+    Our research integrates experimental characterization, computational modeling, and machine learning to design high-performance engineering materials.
+  </p>
 </section>
 
 <section id="research">
-    <h2>Research Areas</h2>
-    <p>Describe your main research themes.</p>
+  <h2>Research Areas</h2>
+  <p>
+    • Advanced Polymer Composites  
+    • Additive Manufacturing & Process Optimization  
+    • Rheology & Melt Flow Behavior  
+    • Machine Learning for Materials Design  
+  </p>
 </section>
 
 <section id="team">
-    <h2>Team</h2>
-    <p>List PI, PhD students, collaborators.</p>
+  <h2>Team</h2>
+  <p>
+    Principal Investigator: Dr. [Name]<br>
+    PhD Students: [Names]<br>
+    Collaborators: [Names]
+  </p>
 </section>
 
 <section id="publications">
-    <h2>Publications</h2>
-    <p>List selected publications here.</p>
+  <h2>Publications</h2>
+  <p>
+    Selected publications coming soon.  
+    (We will format this professionally next.)
+  </p>
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your@email.edu</p>
+  <h2>Contact</h2>
+  <p>
+    Department of Mechanical Engineering<br>
+    University of Texas at San Antonio<br>
+    Email: your@email.edu
+  </p>
 </section>
 
 <footer>
-    <p>© 2026 Your Lab Name</p>
+  © 2026 MINT Lab | University of Texas at San Antonio
 </footer>
 
 </body>
